@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 
 class BlogPostTemplate extends Component {
   render() {
-    const post = get(this, "props.data.contentfulBlog")
+    const post = get(this, "props.data.contentfulBlogPost")
 
     return (
       <Template>
@@ -42,7 +42,7 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query blogPostQuery($slug: String) {
-    contentfulBlog(slug: { eq: $slug }) {
+    contentfulBlogPost(slug: { eq: $slug }) {
       title
       body {
         childMarkdownRemark {

@@ -18,12 +18,14 @@ const Template = ({ children }) => (
             url
           }
         }
-        allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
+        allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
           edges {
             node {
               title
               slug
-              author
+              author {
+                name
+              }
               publishDate(formatString: "MMMM Do, YYYY")
               heroImage {
                 file {

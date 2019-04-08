@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 class indexPage extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title")
-    const posts = get(this, "props.data.allContentfulBlog.edges")
+    const posts = get(this, "props.data.allContentfulBlogPost.edges")
 
     return (
       <Template>
@@ -26,9 +26,9 @@ class indexPage extends React.Component {
                             <Link to={node.slug}>{node.title}</Link>
                           </h2>
                           <span className="entry-meta">
-                            Created on {node.publishDate} By{" "}
+                            Created on {node.publishDate} By
                             <Link to="/about" className="authorname">
-                              {node.author}
+                              {node.author.name}
                             </Link>
                           </span>
                         </div>
@@ -71,12 +71,14 @@ export const pageQuery = graphql`
         url
       }
     }
-    allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
+    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
           title
           slug
-          author
+          author {
+            name
+          }
           publishDate(formatString: "MMMM Do, YYYY")
           heroImage {
             file {

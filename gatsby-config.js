@@ -8,13 +8,11 @@ try {
 // Overwrite the Contentful config with environment variables if they exist
 contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
-  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+  accessToken:
+    process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
 }
 
-const {
-  spaceId,
-  accessToken
-} = contentfulConfig
+const { spaceId, accessToken } = contentfulConfig
 
 if (!spaceId || !accessToken) {
   throw new Error(
@@ -30,20 +28,22 @@ module.exports = {
     twitterUsername: "@abc",
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [{
-          resolve: `gatsby-remark-images-contentful`,
-          options: {
-            maxHeight: 700,
-            backgroundColor: 'red',
-            linkImagesToOriginal: false,
+        plugins: [
+          {
+            resolve: `gatsby-remark-images-contentful`,
+            options: {
+              maxHeight: 700,
+              backgroundColor: "red",
+              linkImagesToOriginal: false,
+            },
           },
-        }, ],
+        ],
       },
     },
     {
@@ -60,15 +60,15 @@ module.exports = {
         appDescription: null,
         developerName: null,
         developerURL: null,
-        dir: 'auto',
-        lang: 'en-US',
-        background: '#fff',
-        theme_color: '#fff',
-        display: 'standalone',
-        orientation: 'any',
-        start_url: '/',
-        version: '1.0',
-      }
-    }
+        dir: "auto",
+        lang: "en-US",
+        background: "#fff",
+        theme_color: "#fff",
+        display: "standalone",
+        orientation: "any",
+        start_url: "/",
+        version: "1.0",
+      },
+    },
   ],
 }

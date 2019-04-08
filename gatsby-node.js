@@ -4,7 +4,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allContentfulBlog {
+      allContentfulBlogPost {
         edges {
           node {
             slug
@@ -14,7 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    result.data.allContentfulBlog.edges.forEach(({ node }) => {
+    result.data.allContentfulBlogPost.edges.forEach(({ node }) => {
       createPage({
         path: node.slug,
         component: path.resolve(`./src/templates/blog-post.js`),
