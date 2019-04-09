@@ -67,6 +67,7 @@ img {
 
 .header-wrapper {
   padding: 13px 0;
+
   /* margin-bottom: 50px; */
 }
 
@@ -82,38 +83,50 @@ section {
   left: 0;
   position: absolute;
   z-index: -2;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+    to right,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -ms-linear-gradient(left,
+    #fff 100%
+  );
+  background: -ms-linear-gradient(
+    left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -o-linear-gradient(left,
+    #fff 100%
+  );
+  background: -o-linear-gradient(
+    left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -webkit-linear-gradient(left,
+    #fff 100%
+  );
+  background: -webkit-linear-gradient(
+    left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -moz-linear-gradient(left,
+    #fff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -webkit-gradient(linear,
+    #fff 100%
+  );
+  background: -webkit-gradient(
+    linear,
     left top,
     right top,
     color-stop(0%, #fff),
     color-stop(35%, #eeeeee),
     color-stop(65%, #eeeeee),
-    color-stop(100%, #fff));
+    color-stop(100%, #fff)
+  );
 }
 
 /* Body - Home */
@@ -295,6 +308,21 @@ section {
   background-color: #f4f8fb;
 }
 
+.hero-wrapper {
+  padding: 45px 0 40px;
+  background-color: #cfcfcf;
+}
+
+.hero-picture {
+  max-width: 78%;
+}
+
+.listen-wrapper {
+  padding: 45px 0 40px;
+  background-color: #ffffff;
+  border: solid #000;
+}
+
 .copyright {
   margin: 0;
   padding: 30px 0 0;
@@ -338,23 +366,29 @@ section {
   left: 0;
   position: absolute;
   z-index: -2;
-  background: linear-gradient(to right,
+  background: linear-gradient(
+    to right,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -moz-linear-gradient(left,
+    #fff 100%
+  );
+  background: -moz-linear-gradient(
+    left,
     #fff 0,
     #eeeeee 35%,
     #eeeeee 65%,
-    #fff 100%);
-  background: -webkit-gradient(linear,
+    #fff 100%
+  );
+  background: -webkit-gradient(
+    linear,
     left top,
     right top,
     color-stop(0%, #fff),
     color-stop(35%, #eeeeee),
     color-stop(65%, #eeeeee),
-    color-stop(100%, #fff));
+    color-stop(100%, #fff)
+  );
 }
 
 /* contact */
@@ -431,7 +465,7 @@ form.contactForm .field ul {
   padding-left: 1em;
 }
 
-form.contactForm>.actions {
+form.contactForm > .actions {
   margin: 2.5em 0 0 !important;
 }
 

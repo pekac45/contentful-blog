@@ -27,10 +27,13 @@ export class Header extends Component {
                     <Link to="/">Home</Link>
                   </li>
                   <li>
-                    <Link to="/about/">About</Link>
+                    <Link to="#listen">Listen</Link>
                   </li>
                   <li>
-                    <Link to="/contact/">Contact</Link>
+                    <Link to="#blog">Read</Link>
+                  </li>
+                  <li>
+                    <Link to="#contact">Contact</Link>
                   </li>
                 </ul>
               </nav>

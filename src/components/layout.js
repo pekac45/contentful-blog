@@ -1,5 +1,7 @@
 import React from "react"
 import Header from "../components/header"
+import Hero from "../components/hero"
+import Listen from "../components/listen"
 import Footer from "../components/footer"
 import Helmet from "react-helmet"
 import { StaticQuery, graphql } from "gatsby"
@@ -60,7 +62,11 @@ const Template = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header />
-        {children}
+        <Hero />
+        <div id="listen">
+          <Listen />
+        </div>
+        <div id="blog">{children}</div>
         <Footer />
       </>
     )}
