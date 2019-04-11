@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import logoImg from "../images/logo.png"
+import logoImg from "../images/logo.svg"
 import { Link } from "gatsby"
 
 export class Footer extends Component {
@@ -18,6 +18,11 @@ export class Footer extends Component {
                   <b>Michal Pekar</b>
                 </a>
                 <br />
+              </p>
+              <p>
+                double h logo by AlfredoCreates @{" "}
+                <a href="https://flaticondesign.com">flaticondesign.com</a> from
+                the <a href="https://nounproject.com">Noun Project</a>
               </p>
             </div>
           </div>

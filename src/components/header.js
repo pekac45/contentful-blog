@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Link from "gatsby-link"
-import logoImg from "../images/logo.png"
+import logoImg from "../images/logo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faFacebookF,
@@ -16,7 +16,7 @@ export class Header extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-2 col-md-12 text-left">
-              <Link to="/" className="brand-logo">
+              <Link to="/" className="brand-logo--header">
                 <img src={logoImg} alt="brand logo" />
               </Link>
             </div>

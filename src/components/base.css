@@ -57,12 +57,16 @@ img {
 }
 
 .brand-logo {
-  padding-top: 3px;
   display: inline-block;
 }
 
+.brand-logo--header img {
+  padding-top: 5px;
+  height: 50px;
+}
+
 .brand-logo img {
-  height: 35px;
+  height: 100px;
 }
 
 .header-wrapper {
