@@ -1,14 +1,15 @@
-import React from "react"
-import Header from "../components/header"
-import Hero from "../components/hero"
-import Listen from "../components/listen"
-import Contact from "../components/contact"
-import Footer from "../components/footer"
-import Helmet from "react-helmet"
-import { StaticQuery, graphql } from "gatsby"
+/* eslint-disable react/prop-types */
+import React from 'react';
+import Helmet from 'react-helmet';
+import { StaticQuery, graphql } from 'gatsby';
+import Header from './header';
+import Hero from './hero';
+import Listen from './listen';
+import Contact from './contact';
+import Footer from './footer';
 
-import "bootstrap/dist/css/bootstrap.css"
-import "./base.css"
+import 'bootstrap/dist/css/bootstrap.css';
+import './base.css';
 
 const Template = ({ children }) => (
   <StaticQuery
@@ -54,10 +55,10 @@ const Template = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={[
             {
-              name: "description",
-              content: data.site.siteMetadata.description,
+              name: 'description',
+              content: data.site.siteMetadata.description
             },
-            { name: "keywords", content: "sample, something" },
+            { name: 'keywords', content: 'sample, something' }
           ]}
         >
           <html lang="en" />
@@ -75,6 +76,6 @@ const Template = ({ children }) => (
       </>
     )}
   />
-)
+);
 
-export default Template
+export default Template;

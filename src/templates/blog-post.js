@@ -1,13 +1,16 @@
-import React, { Component } from "react"
-import get from "lodash/get"
-import Template from "../components/layout"
-import Helmet from "react-helmet"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
+/* eslint-disable react/no-danger */
+/* eslint-disable react/prefer-stateless-function */
+/* eslint-disable react/jsx-one-expression-per-line */
+import React, { Component } from 'react';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Template from '../components/layout';
 
 class BlogPostTemplate extends Component {
   render() {
-    const post = get(this, "props.data.contentfulBlogPost")
+    const post = get(this, 'props.data.contentfulBlogPost');
 
     return (
       <Template>
@@ -17,16 +20,13 @@ class BlogPostTemplate extends Component {
             <div className="row">
               <div className="col-lg-12 col-md-12">
                 <div className="entry-media">
-                  <Img
-                    fluid={post.heroImage.fluid}
-                    backgroundColor={"#f4f8fb"}
-                  />
+                  <Img fluid={post.heroImage.fluid} backgroundColor="#f4f8fb" />
                 </div>
                 <h1 className="section-headline"> {post.title} </h1>
                 <p> {post.publishDate} </p>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: post.body.childMarkdownRemark.html,
+                    __html: post.body.childMarkdownRemark.html
                   }}
                 />
               </div>
@@ -34,11 +34,11 @@ class BlogPostTemplate extends Component {
           </div>
         </div>
       </Template>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query blogPostQuery($slug: String) {
@@ -59,4 +59,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

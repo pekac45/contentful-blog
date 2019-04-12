@@ -1,15 +1,15 @@
-import React, { Component } from "react"
-import Link from "gatsby-link"
-import logoImg from "../images/logo.svg"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faFacebookF,
   faTwitter,
   faGooglePlusG,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons"
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
+import logoImg from '../images/logo.svg';
 
-export class Header extends Component {
+class Header extends Component {
   render() {
     return (
       <section className="header-wrapper">
@@ -75,8 +75,8 @@ export class Header extends Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;

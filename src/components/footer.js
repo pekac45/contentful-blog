@@ -1,8 +1,10 @@
-import React, { Component } from "react"
-import logoImg from "../images/logo.svg"
-import { Link } from "gatsby"
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component } from 'react';
+import { Link } from 'gatsby';
+import logoImg from '../images/logo.svg';
 
-export class Footer extends Component {
+class Footer extends Component {
   render() {
     return (
       <section className="footer-wrapper pad-50 bg-lightblue style-2">
@@ -13,23 +15,23 @@ export class Footer extends Component {
                 <img src={logoImg} alt="brand logo" />
               </Link>
               <p className="copyright">
-                Copyrights © 2019{" "}
+                Copyrights © 2019{' '}
                 <a href="https://pekar.space">
                   <b>Michal Pekar</b>
                 </a>
                 <br />
               </p>
               <p>
-                double h logo by AlfredoCreates @{" "}
-                <a href="https://flaticondesign.com">flaticondesign.com</a> from
-                the <a href="https://nounproject.com">Noun Project</a>
+                double h logo by AlfredoCreates @{' '}
+                <a href="https://flaticondesign.com">flaticondesign.com</a> from the{' '}
+                <a href="https://nounproject.com">Noun Project</a>
               </p>
             </div>
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;

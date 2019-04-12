@@ -1,14 +1,16 @@
-import React from "react"
-import get from "lodash/get"
-import Helmet from "react-helmet"
-import Template from "../components/layout"
-import { Link, graphql } from "gatsby"
-import Img from "gatsby-image"
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/prefer-stateless-function */
+import React from 'react';
+import get from 'lodash/get';
+import Helmet from 'react-helmet';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Template from '../components/layout';
 
 class indexPage extends React.Component {
   render() {
-    const siteTitle = get(this, "props.data.site.siteMetadata.title")
-    const posts = get(this, "props.data.allContentfulBlogPost.edges")
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+    const posts = get(this, 'props.data.allContentfulBlogPost.edges');
 
     return (
       <Template>
@@ -30,22 +32,17 @@ class indexPage extends React.Component {
                           </span>
                         </div>
                         <div className="entry-media">
-                          <Img
-                            fluid={node.heroImage.fluid}
-                            backgroundColor={"#f4f8fb"}
-                          />
+                          <Img fluid={node.heroImage.fluid} backgroundColor="#f4f8fb" />
                         </div>
                         <div className="entry-content-bottom">
-                          <p className="entry-content">
-                            {node.body.childMarkdownRemark.excerpt}
-                          </p>
+                          <p className="entry-content">{node.body.childMarkdownRemark.excerpt}</p>
                           <Link to={node.slug} className="entry-read-more">
                             <span />
                             Read More
                           </Link>
                         </div>
                       </article>
-                    )
+                    );
                   })}
                 </div>
               </div>
@@ -53,11 +50,11 @@ class indexPage extends React.Component {
           </div>
         </div>
       </Template>
-    )
+    );
   }
 }
 
-export default indexPage
+export default indexPage;
 
 export const pageQuery = graphql`
   query HomeQuery {
@@ -94,4 +91,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

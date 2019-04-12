@@ -1,5 +1,7 @@
-import React from "react"
-import Link from "gatsby-link"
+/* eslint-disable react/no-danger */
+/* eslint-disable react/prop-types */
+import React from 'react';
+import Link from 'gatsby-link';
 
 export default ({ article }) => (
   <div className="articles">
@@ -9,8 +11,8 @@ export default ({ article }) => (
     </h3>
     <p
       dangerouslySetInnerHTML={{
-        __html: article.body.childMarkdownRemark.html,
+        __html: article.body.childMarkdownRemark.html
       }}
     />
   </div>
-)
+);

@@ -1,6 +1,6 @@
-import React, { Component } from "react"
+import React, { Component } from 'react';
 
-export class Listen extends Component {
+class Listen extends Component {
   render() {
     return (
       <section className="listen-wrapper pad-50 bg-lightblue style-2">
@@ -12,8 +12,8 @@ export class Listen extends Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Listen
+export default Listen;

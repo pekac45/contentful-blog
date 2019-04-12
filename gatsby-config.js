@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 let contentfulConfig
 
 try {
@@ -32,11 +34,11 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images-contentful`,
+            resolve: "gatsby-remark-images-contentful",
             options: {
               maxHeight: 700,
               backgroundColor: "red",
@@ -51,7 +53,7 @@ module.exports = {
       options: contentfulConfig,
     },
     {
-      resolve: `gatsby-plugin-favicon`,
+      resolve: "gatsby-plugin-favicon",
       options: {
         logo: "./src/images/favicon.png",
 

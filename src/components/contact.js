@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+/* eslint-disable react/prefer-stateless-function */
+import React, { Component } from 'react';
 
 export class Listen extends Component {
   render() {
@@ -12,8 +13,8 @@ export class Listen extends Component {
           </div>
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default Listen
+export default Listen;
