@@ -1,3 +1,5 @@
+/* eslint-disable react/prefer-stateless-function */
+
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -23,9 +25,6 @@ class Header extends Component {
             <div className="col-lg-8 col-md-12">
               <nav id="main-menu" className="text-center">
                 <ul>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
                   <li>
                     <Link to="#listen">Listen</Link>
                   </li>
