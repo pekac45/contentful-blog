@@ -225,7 +225,6 @@ section {
   font-weight: bold;
   position: relative;
   display: inline-block;
-  float: right;
 }
 
 .blog-post .social-share {
@@ -487,7 +486,7 @@ form.contactForm > .actions {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   white-space: nowrap;
 }
 

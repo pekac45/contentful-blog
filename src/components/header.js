@@ -1,5 +1,4 @@
 /* eslint-disable react/prefer-stateless-function */
-
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -26,13 +25,13 @@ class Header extends Component {
               <nav id="main-menu" className="text-center">
                 <ul>
                   <li>
-                    <Link to="#listen">Listen</Link>
+                    <Link to="/#listen">Listen</Link>
                   </li>
                   <li>
-                    <Link to="#blog">Read</Link>
+                    <Link to="/#blog">Read</Link>
                   </li>
                   <li>
-                    <Link to="#contact">Contact</Link>
+                    <Link to="/#contact">Contact</Link>
                   </li>
                 </ul>
               </nav>

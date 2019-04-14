@@ -1,5 +1,7 @@
+/* eslint-disable no-alert */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import { navigateTo } from 'gatsby-link';
+// import { navigateTo } from 'gatsby-link';
 
 function encode(data) {
   return Object.keys(data)
@@ -10,8 +12,14 @@ function encode(data) {
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      buttonText: 'Send msg'
+    };
   }
+
+  changeButtonText = buttonText => {
+    this.setState({ buttonText });
+  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -28,15 +36,17 @@ export default class Contact extends React.Component {
         ...this.state
       })
     })
-      .then(() => navigateTo(form.getAttribute('action')))
+      .then(() => this.changeButtonText('Sent'))
       .catch(error => alert(error));
   };
 
   render() {
+    const { buttonText } = this.state;
     return (
-      <div>
+      <div className="container contacts">
         <h1>Contact</h1>
         <form
+          className="contactForm"
           name="contact"
           method="post"
           action="/"
@@ -46,35 +56,46 @@ export default class Contact extends React.Component {
         >
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
+          <div hidden>
+            <label htmlFor="bot-field">
               Don’t fill this out: <input name="bot-field" onChange={this.handleChange} />
             </label>
-          </p>
-          <p>
-            <label>
-              Your name:
+          </div>
+          <div className="field half first">
+            <label htmlFor="name">
+              NAME:
               <br />
-              <input type="text" name="name" onChange={this.handleChange} />
+              <input type="text" name="name" id="name" onChange={this.handleChange} required />
             </label>
-          </p>
-          <p>
-            <label>
-              Your email:
+          </div>
+          <div className="field half">
+            <label htmlFor="email">
+              EMAIL:
               <br />
-              <input type="email" name="email" onChange={this.handleChange} />
+              <input type="email" name="email" id="email" onChange={this.handleChange} required />
             </label>
-          </p>
-          <p>
-            <label>
-              Message:
+          </div>{' '}
+          <div className="field">
+            <label htmlFor="message">
+              MESSAGE:
               <br />
-              <textarea name="message" onChange={this.handleChange} />
+              <textarea
+                name="message"
+                id="message"
+                rows="6"
+                onChange={this.handleChange}
+                required
+              />
             </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          </div>
+          <ul className="actions">
+            <li>
+              <input type="submit" value={buttonText} className="special" id="submit-button" />
+            </li>
+            <li>
+              <input type="reset" value="Clear" />
+            </li>
+          </ul>
         </form>
       </div>
     );
