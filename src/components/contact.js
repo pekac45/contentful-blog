@@ -52,6 +52,7 @@ export default class Contact extends React.Component {
     // This part deals with animation and changing the state = changing button text
     await document.getElementById('submit-button').classList.add('animate');
     await this.sleep(500);
+    await document.getElementById('contactForm').reset();
     await this.changeButtonText(true);
     await this.sleep(1000);
     await document.getElementById('submit-button').classList.remove('animate');
@@ -64,6 +65,7 @@ export default class Contact extends React.Component {
         <h1>Contact</h1>
         <form
           className="contactForm"
+          id="contactForm"
           name="contact"
           method="post"
           action="/"
