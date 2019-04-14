@@ -109,7 +109,7 @@ export default class Contact extends React.Component {
             <li>
               <input
                 type="submit"
-                value={buttonText ? 'Sent' : 'Send msg'}
+                value={buttonText ? 'Sent' : 'Send message'}
                 className="special"
                 id="submit-button"
               />
