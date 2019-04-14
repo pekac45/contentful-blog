@@ -21,12 +21,10 @@ export default class Contact extends React.Component {
   };
 
   buttonClear = async () => {
-    console.log('clicked clear');
-
     await document.getElementById('submit-button').classList.remove('animate');
     await document.getElementById('submit-button').classList.add('animate');
-
     await this.sleep(500);
+    // next line changes state, everything else deals with animation
     await this.changeButtonText(false);
     await this.sleep(1000);
     await document.getElementById('submit-button').classList.remove('animate');
@@ -36,6 +34,7 @@ export default class Contact extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   };
 
+  // helper function for our animation on buttons
   sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
   handleSubmit = async e => {
@@ -49,6 +48,8 @@ export default class Contact extends React.Component {
         ...this.state
       })
     });
+
+    // This part deals with animation and changing the state = changing button text
     await document.getElementById('submit-button').classList.add('animate');
     await this.sleep(500);
     await this.changeButtonText(true);
