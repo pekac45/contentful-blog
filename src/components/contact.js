@@ -1,7 +1,6 @@
 /* eslint-disable no-alert */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-// import { navigateTo } from 'gatsby-link';
 
 function encode(data) {
   return Object.keys(data)
@@ -13,7 +12,7 @@ export default class Contact extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonText: 'Send msg'
+      buttonText: false
     };
   }
 
@@ -21,11 +20,25 @@ export default class Contact extends React.Component {
     this.setState({ buttonText });
   };
 
+  buttonClear = async () => {
+    console.log('clicked clear');
+
+    await document.getElementById('submit-button').classList.remove('animate');
+    await document.getElementById('submit-button').classList.add('animate');
+
+    await this.sleep(500);
+    await this.changeButtonText(false);
+    await this.sleep(1000);
+    await document.getElementById('submit-button').classList.remove('animate');
+  };
+
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  handleSubmit = e => {
+  sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+  handleSubmit = async e => {
     e.preventDefault();
     const form = e.target;
     fetch('/', {
@@ -35,9 +48,12 @@ export default class Contact extends React.Component {
         'form-name': form.getAttribute('name'),
         ...this.state
       })
-    })
-      .then(() => this.changeButtonText('Sent'))
-      .catch(error => alert(error));
+    });
+    await document.getElementById('submit-button').classList.add('animate');
+    await this.sleep(500);
+    await this.changeButtonText(true);
+    await this.sleep(1000);
+    await document.getElementById('submit-button').classList.remove('animate');
   };
 
   render() {
@@ -90,10 +106,15 @@ export default class Contact extends React.Component {
           </div>
           <ul className="actions">
             <li>
-              <input type="submit" value={buttonText} className="special" id="submit-button" />
+              <input
+                type="submit"
+                value={buttonText ? 'Sent' : 'Send msg'}
+                className="special"
+                id="submit-button"
+              />
             </li>
             <li>
-              <input type="reset" value="Clear" />
+              <input type="reset" value="Clear" onClick={this.buttonClear} />
             </li>
           </ul>
         </form>

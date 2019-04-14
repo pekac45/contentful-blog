@@ -557,6 +557,28 @@ form.contactForm > .actions {
   margin-bottom: 70px;
 }
 
+#submit-button {
+  width: 200px;
+}
+
+#submit-button.animate {
+  /* transition: all 1s ease-in-out;  */
+  animation-name: text-change;
+  animation-duration: 1s;
+}
+
+@keyframes text-change {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* success page */
 .successpage {
   background-image: url('../images/thanyoubg.png');
