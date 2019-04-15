@@ -22,7 +22,7 @@ class BlogPostTemplate extends Component {
                 <div className="entry-media">
                   <Img fluid={post.heroImage.fluid} backgroundColor="#f4f8fb" />
                 </div>
-                <h1 className="section-headline"> {post.title} </h1>
+                <h1 id="blog-title" className="section-headline"> {post.title} </h1>
                 <p> {post.publishDate} </p>
                 <div
                   dangerouslySetInnerHTML={{
