@@ -25,7 +25,7 @@ class indexPage extends React.Component {
                       <article className="blog-listing" key={node.slug}>
                         <div className="entry-meta-content">
                           <h2 className="entry-title">
-                            <Link to={`/${node.slug}`}>{node.title}</Link>
+                            <Link to={`/${node.slug}#blog-title`}>{node.title}</Link>
                           </h2>
                           <span className="entry-meta">
                             Created on {node.publishDate} By {node.author.name}
