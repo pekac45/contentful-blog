@@ -8,7 +8,7 @@ class Listen extends Component {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 col-md-12 widget text-center first-row">
-              <h2>Listen</h2>
+              <h2 className="u-mar-med">Listen</h2>
             </div>
           </div>
         </div>

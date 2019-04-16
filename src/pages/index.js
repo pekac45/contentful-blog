@@ -19,7 +19,7 @@ class indexPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-lg-12 col-md-12 text-center first-row">
-                <h2>Read</h2>
+                <h2 className="u-mar-med">Read</h2>
               </div>
             </div>
           </div>

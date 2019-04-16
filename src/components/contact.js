@@ -62,7 +62,14 @@ export default class Contact extends React.Component {
     const { buttonText } = this.state;
     return (
       <div className="container contacts">
-        <h1>Contact</h1>
+        <div className="container">
+          <div className="row">
+            {' '}
+            <div className="col-lg-12 col-md-12 text-center first-row">
+              <h2 className="u-mar-med">Contact</h2>
+            </div>
+          </div>
+        </div>
         <form
           className="contactForm"
           id="contactForm"
