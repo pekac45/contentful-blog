@@ -1,20 +1,9 @@
-//colors
-$color_0: #777;
-$color_1: #000;
-$color_2: #f4f8fb;
-$color_3: #333;
-$color_4: #242943;
-$color_5: #34495e;
-$color_6: #fff;
-$color_7: #00a99b;
-$color_8: rgba(22, 22, 171, 0.1);
-
 //@extend-elements
 //original selectors
 //form.contactForm .field input[type='email'], form.contactForm .field input[type='password'], form.contactForm .field input[type='search'], form.contactForm .field input[type='tel'], form.contactForm .field input[type='text'], form.contactForm .field input[type='url'], form.contactForm .field select, form.contactForm .field textarea
 %extend_1 {
   appearance: none;
-  background: $color_2;
+  background: $color_white-1;
   border: none;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 0;
@@ -35,8 +24,8 @@ $color_8: rgba(22, 22, 171, 0.1);
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 0;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-  box-shadow: inset 0 0 0 2px $color_3;
-  color: $color_3;
+  box-shadow: inset 0 0 0 2px $color_brown-0;
+  color: $color_brown-0;
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
@@ -56,17 +45,17 @@ $color_8: rgba(22, 22, 171, 0.1);
 //original selectors
 //.contactForm .button.special, .contactForm button.special, .contactForm input[type='button'].special, .contactForm input[type='reset'].special, .contactForm input[type='submit'].special
 %extend_3 {
-  background-color: $color_2;
+  background-color: $color_white-1;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: none;
-  color: $color_4;
+  color: $color_purple-0;
 }
 
 .form-wrapper {
   padding: 45px 0 40px;
-  background-color: $color_0;
+  background-color: $color_grey-1;
   height: 100vh;
-  border: solid $color_1;
+  border: solid $color_black-0;
 }
 .contactForm {
   .button {
@@ -75,12 +64,12 @@ $color_8: rgba(22, 22, 171, 0.1);
       @extend %extend_3;
     }
     &:active {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
     &:hover {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
   }
   button {
@@ -89,12 +78,12 @@ $color_8: rgba(22, 22, 171, 0.1);
       @extend %extend_3;
     }
     &:active {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
     &:hover {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
   }
   input[type='button'] {
@@ -103,12 +92,12 @@ $color_8: rgba(22, 22, 171, 0.1);
       @extend %extend_3;
     }
     &:active {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
     &:hover {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
   }
   input[type='reset'] {
@@ -117,12 +106,12 @@ $color_8: rgba(22, 22, 171, 0.1);
       @extend %extend_3;
     }
     &:active {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
     &:hover {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
   }
   input[type='submit'] {
@@ -131,12 +120,12 @@ $color_8: rgba(22, 22, 171, 0.1);
       @extend %extend_3;
     }
     &:active {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
     &:hover {
-      background-color: $color_5;
-      color: $color_6 !important;
+      background-color: $color_blue-0;
+      color: $color_white-0 !important;
     }
   }
   ul.actions {
@@ -158,10 +147,10 @@ $color_8: rgba(22, 22, 171, 0.1);
     left: 0;
     position: absolute;
     top: 0;
-    background-color: $color_2;
+    background-color: $color_white-1;
     //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
     border-radius: 100%;
-    color: $color_4;
+    color: $color_purple-0;
     display: inline-block;
     height: 50px;
     line-height: 50px;
@@ -174,7 +163,7 @@ $color_8: rgba(22, 22, 171, 0.1);
     font-size: 22px;
   }
   a {
-    color: $color_7;
+    color: $color_green-0;
   }
 }
 .contacts {
@@ -196,7 +185,7 @@ form.contactForm {
       }
     }
     label {
-      color: $color_1;
+      color: $color_black-0;
       display: block;
       font-size: 0.8em;
       font-weight: 600;
@@ -251,6 +240,6 @@ form.contactForm {
   }
 }
 .conatctSplit section:not(:first-of-type) {
-  border-top: 1px solid $color_8;
+  border-top: 1px solid $color_purple-1;
   padding-top: 30px;
 }
