@@ -21,10 +21,9 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Cape - A Gatsby Contentful Site',
-    description: 'A Sample of Gatsby Blogging Theme',
-    url: 'https://cape.netlify.com/',
-    twitterUsername: '@abc'
+    title: 'Henrik Salomon - RnB Producer',
+    description: 'Listen to my tunes',
+    url: 'henrik.pekar.space',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

@@ -65,8 +65,7 @@ img {
 }
 
 .brand-logo--header img {
-  padding-top: 5px;
-  height: 50px;
+  height: 40px;
 }
 
 .brand-logo img {
@@ -79,6 +78,10 @@ img {
 
 section {
   position: relative;
+}
+
+.blog-wrapper {
+  padding-top: 45px;
 }
 
 .header-wrapper:after {
@@ -581,28 +584,4 @@ form.contactForm > .actions {
   100% {
     opacity: 1;
   }
-}
-
-/* success page */
-.successpage {
-  background-image: url('../images/thanyoubg.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 210px 0;
-  background-color: #f4f8fb;
-}
-
-.successpage p {
-  margin: 65px 0 0;
-}
-
-.successpage .backtohome {
-  color: #00a99b;
-  font-weight: bold;
-  margin-top: 20px;
-  display: inline-block;
-}
-
-.successpage .backtohome:hover {
-  letter-spacing: 0.5px;
 }

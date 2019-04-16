@@ -15,7 +15,14 @@ class indexPage extends React.Component {
     return (
       <Template>
         <Helmet title={siteTitle} />
-        <div className="indexpage">
+        <div className="indexpage blog-wrapper">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 col-md-12 text-center first-row">
+                <h2>Read</h2>
+              </div>
+            </div>
+          </div>
           <div className="right-section blog-post">
             <div className="container">
               <div className="row">
@@ -36,7 +43,7 @@ class indexPage extends React.Component {
                         </div>
                         <div className="entry-content-bottom">
                           <p className="entry-content">{node.body.childMarkdownRemark.excerpt}</p>
-                          <Link to={`/${node.slug}`} className="entry-read-more">
+                          <Link to={`/${node.slug}#blog-title`} className="entry-read-more">
                             <span />
                             Read More
                           </Link>
