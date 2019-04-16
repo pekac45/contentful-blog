@@ -1,0 +1,72 @@
+//colors
+$color_0: #fff;
+$color_1: #eee;
+$color_2: #000;
+$color_3: #333;
+
+.brand-logo {
+  display: inline-block;
+  img {
+    height: 100px;
+  }
+}
+.header-wrapper {
+  padding: 13px 0;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    background: linear-gradient(to right, $color_0 0, $color_1 35%, $color_1 65%, $color_0 100%);
+  }
+}
+.brand-logo--header img {
+  height: 40px;
+}
+#main-menu ul {
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0 18px;
+    display: inline-block;
+    position: relative;
+    a {
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: $color_2;
+      line-height: 42px;
+      letter-spacing: 0.7px;
+    }
+    &:after {
+      background-color: $color_3;
+      //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+      border-radius: 100%;
+      width: 4px;
+      height: 4px;
+      bottom: 18.8px;
+      right: -3px;
+      position: absolute;
+      content: '';
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+.social-share {
+  margin: 0;
+  li {
+    a {
+      display: inline-block;
+      padding: 8px 0 0;
+    }
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

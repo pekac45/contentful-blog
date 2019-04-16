@@ -1,5 +1,5 @@
 {
-  "name": "Henrik Salomon",
+  "name": "henrik-salomon",
   "private": true,
   "description": "Personal music website",
   "version": "0.1.0",
@@ -27,6 +27,7 @@
     "gatsby-plugin-manifest": "^2.0.19",
     "gatsby-plugin-offline": "^2.0.24",
     "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sitemap": "^2.0.6",
     "gatsby-remark-autolink-headers": "^2.0.15",
     "gatsby-remark-images-contentful": "^2.0.8",
@@ -34,6 +35,7 @@
     "gatsby-source-filesystem": "^2.0.23",
     "gatsby-transformer-remark": "^2.3.0",
     "lodash": "^4.17.11",
+    "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",

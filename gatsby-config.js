@@ -23,12 +23,13 @@ module.exports = {
   siteMetadata: {
     title: 'Henrik Salomon - RnB Producer',
     description: 'Listen to my tunes',
-    url: 'henrik.pekar.space',
+    url: 'henrik.pekar.space'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

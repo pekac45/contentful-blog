@@ -1,0 +1,7 @@
+#submit-button {
+  width: 200px;
+  &.animate {
+    animation-name: text-change;
+    animation-duration: 1s;
+  }
+}

@@ -9,7 +9,7 @@ import Contact from './contact';
 import Footer from './footer';
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './base.css';
+import '../sass/main.scss';
 
 const Template = ({ children }) => (
   <StaticQuery
