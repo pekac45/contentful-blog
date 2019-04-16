@@ -3,7 +3,7 @@
     margin-bottom: 75px;
     position: relative;
     &:first-of-type {
-      margin-top: 50px;
+      margin-top: 20px;
     }
     &:hover .entry-media img {
       //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
