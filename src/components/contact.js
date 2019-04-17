@@ -66,7 +66,7 @@ export default class Contact extends React.Component {
           <div className="row">
             {' '}
             <div className="col-lg-12 col-md-12 text-center first-row">
-              <h2 className="u-mar-med">Contact</h2>
+              <h2 className="u-mar-bot-medium">Contact</h2>
             </div>
           </div>
         </div>
