@@ -8,7 +8,7 @@ import {
   faGooglePlusG,
   faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons';
-import logoImg from '../images/logo.svg';
+import logoImg from '../images/logo-white.svg';
 
 class Header extends Component {
   render() {

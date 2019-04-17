@@ -63,16 +63,18 @@ const Template = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header />
-        <Hero />
-        <div id="listen">
-          <Listen />
+        <div id="background-wrapper">
+          <Header />
+          <Hero />
+          <div id="listen">
+            <Listen />
+          </div>
+          <div id="blog">{children}</div>
+          <div id="contact">
+            <Contact />
+          </div>
+          <Footer />
         </div>
-        <div id="blog">{children}</div>
-        <div id="contact">
-          <Contact />
-        </div>
-        <Footer />
       </>
     )}
   />

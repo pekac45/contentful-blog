@@ -2,7 +2,7 @@
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import logoImg from '../images/logo.svg';
+import logoImg from '../images/logo-white.svg';
 
 class Footer extends Component {
   render() {
