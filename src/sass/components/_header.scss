@@ -6,7 +6,7 @@
 }
 .header-wrapper {
   padding: 13px 0;
-  border-bottom: cadetblue solid 2px;
+  border-bottom: $color-green-0 solid 2px;
   &:after {
     content: '';
     width: 100%;
