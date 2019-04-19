@@ -3,8 +3,8 @@
 //form.contactForm .field input[type='email'], form.contactForm .field input[type='password'], form.contactForm .field input[type='search'], form.contactForm .field input[type='tel'], form.contactForm .field input[type='text'], form.contactForm .field input[type='url'], form.contactForm .field select, form.contactForm .field textarea
 %extend_1 {
   appearance: none;
-  border: 1px $color_black-0 solid !important;
-  background: $color_white-3;
+  border: 1px $color_white-0 solid !important;
+  background: $color_black-2;
   border: none;
   //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
   border-radius: 0;
@@ -48,14 +48,14 @@
   background-color: $color_purple-0;
   //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   box-shadow: none;
-  color: $color_black-1;
+  color: $color_white-1;
 }
 
 .form-wrapper {
   padding: 45px 0 40px;
   background-color: $color_grey-1;
   height: 100vh;
-  border: solid $color_black-0;
+  border: solid $color_white-0;
 }
 .contactForm {
   .button {
@@ -123,14 +123,14 @@
     }
     &:active {
       background-color: transparent;
-      color: $color_black-1 !important;
-      border: 1px solid $color_black-1;
+      color: $color_white-1 !important;
+      border: 1px solid $color_white-1;
     }
     &:hover {
       background-color: transparent;
-      color: $color_black-1 !important;
-      border: 1px solid $color_black-1;
-      box-shadow: inset 0 0 0 2px $color_black-1;
+      color: $color_white-1 !important;
+      border: 1px solid $color_white-1;
+      box-shadow: inset 0 0 0 2px $color_white-1;
     }
   }
   ul.actions {
@@ -190,7 +190,7 @@ form.contactForm {
       }
     }
     label {
-      color: $color_black-0;
+      color: $color_white-0;
       display: block;
       font-size: 0.8em;
       font-weight: 600;
