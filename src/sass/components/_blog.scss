@@ -9,6 +9,7 @@
     &:hover .entry-media img {
       //Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
       transform: scale(1.05);
+      filter: grayscale(0);
     }
   }
   .entry-title {
