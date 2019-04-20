@@ -35,6 +35,9 @@
       color: $color_white-0;
       line-height: 42px;
       letter-spacing: 0.7px;
+      &:hover {
+        color: $color-grey-1;
+      }
     }
     &:after {
       //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
