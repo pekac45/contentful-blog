@@ -61,7 +61,7 @@ export default class Contact extends React.Component {
   render() {
     const { buttonText } = this.state;
     return (
-      <div className="container contacts">
+      <div className="container contacts u-padding-both-medium">
         <div className="container">
           <div className="row">
             {' '}

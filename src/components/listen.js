@@ -2,7 +2,7 @@ import React from 'react';
 
 const Listen = () => {
   return (
-    <section className="listen-wrapper pad-50 bg-lightblue style-2">
+    <section className="listen-wrapper pad-50 bg-lightblue style-2 u-padding-both-medium">
       <div className="container">
         <div className="row">
           <div className="col-lg-12 col-md-12 widget text-center first-row">
