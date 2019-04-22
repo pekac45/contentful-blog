@@ -6,6 +6,8 @@
 }
 .header-wrapper {
   padding: 13px 0;
+  background-color: $color_purple-1;
+
   border-bottom: $color-green-0 solid 2px;
   &:after {
     content: '';
