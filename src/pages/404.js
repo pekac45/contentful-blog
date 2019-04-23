@@ -20,10 +20,7 @@ const PageNotFound = () => {
             u-mar-bot-medium"
           >
             <h2>404</h2>
-            <h4>
-              No match found for
-              {` ${location.pathname}`}
-            </h4>
+            <h4>There is nothing here! Nothing!</h4>
           </div>
         </div>
       </Template>
