@@ -2,11 +2,20 @@ html {
   scroll-behavior: smooth;
 
   // This defines what 1rem is
-  // font-size: 62.5%; // 1 rem = 10px
+  font-size: 62.5%; // 1 rem = 10px
+}
+
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: inherit;
 }
 
 body {
   color: $color-white-0;
+  box-sizing: border-box;
 }
 
 img {

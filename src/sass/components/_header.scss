@@ -1,11 +1,11 @@
 .brand-logo {
   display: inline-block;
   img {
-    height: 100px;
+    height: 10rem;
   }
 }
 .header-wrapper {
-  padding: 13px 0;
+  padding: 1.3px 0;
   background-color: $color_purple-1;
 
   border-bottom: $color-green-0 solid 2px;
@@ -20,22 +20,22 @@
   }
 }
 .brand-logo--header img {
-  height: 40px;
+  height: 4rem;
   color: $color-black-0;
 }
 #main-menu ul {
   margin: 0;
   padding: 0;
   li {
-    padding: 0 18px;
+    padding: 0 1.8rem;
     display: inline-block;
     position: relative;
     a {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
       text-transform: uppercase;
       color: $color_white-0;
-      line-height: 42px;
+      line-height: 4.2rem;
       letter-spacing: 0.7px;
       &:hover {
         color: $color-grey-1;
@@ -46,7 +46,7 @@
       border-radius: 100%;
       width: 4px;
       height: 4px;
-      bottom: 18.8px;
+      bottom: 1.88rem;
       right: -3px;
       position: absolute;
       content: '';
@@ -62,10 +62,10 @@
   li {
     a {
       display: inline-block;
-      padding: 8px 0 0;
+      padding: 0.8rem 0 0;
     }
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 1.5rem;
     }
   }
 }

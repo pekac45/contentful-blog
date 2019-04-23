@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="col-lg-12 col-md-12 widget text-center">
             <img src={heroImg} alt="Henrik Salomon faceshot" className="hero-picture" />
             <h1>Henrik Salomon</h1>
-            <p>Future R&B Producer</p>
+            <h3>Future R&B Producer</h3>
           </div>
         </div>
       </div>
