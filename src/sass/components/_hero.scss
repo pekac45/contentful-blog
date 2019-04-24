@@ -1,8 +1,16 @@
+$hero-height: 80vh;
+
 .hero-wrapper {
-  height: 80vh;
+  height: $hero-height;
+  position: relative;
 }
 
 .hero-picture {
   max-width: 65%;
-  margin: 8vh auto 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: calc(#{$hero-height} / 30);
+  left: 0%;
 }
