@@ -1,16 +1,26 @@
 $hero-height: 80vh;
 
 .hero-wrapper {
-  height: $hero-height;
+  // height: $hero-height;
   position: relative;
+  margin-bottom: 20rem;
 }
 
 .hero-picture {
   max-width: 65%;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
+
+  @include respond(big-desktop) {
+    max-width: 50%;
+  }
 }
 
 .hero-content {
-  position: absolute;
-  top: calc(#{$hero-height} / 30);
-  left: 0%;
+  margin-top: 5rem;
+  // position: absolute;
+  // top: calc(#{$hero-height} / 30);
+  // left: 0%;
 }
