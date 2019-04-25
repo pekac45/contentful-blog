@@ -3,6 +3,17 @@ html {
 
   // This defines what 1rem is
   font-size: 62.5%; // 1 rem = 10px
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
 }
 
 *,
@@ -16,10 +27,6 @@ html {
 body {
   color: $color-white-0;
   box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
 }
 
 section {

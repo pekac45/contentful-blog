@@ -14,12 +14,12 @@ const Header = () => {
     <section className="header-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-lg-2 col-md-12 text-left">
+          <div className="col">
             <Link to="/" className="brand-logo--header">
               <img src={logoImg} alt="brand logo" />
             </Link>
           </div>
-          <div className="col-lg-8 col-md-12">
+          <div className="col-7">
             <nav id="main-menu" className="text-center">
               <ul>
                 <li>
@@ -34,39 +34,30 @@ const Header = () => {
               </ul>
             </nav>
           </div>
-          <div className="col-lg-2 col-md-12">
-            <div className="text-right">
-              <ul className="social-share list-inline">
-                <li className="list-inline-item">
-                  <Link to="/">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faFacebookF} />
-                    </span>
-                  </Link>
-                </li>
-                <li className="list-inline-item">
-                  <Link to="/">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faTwitter} />
-                    </span>
-                  </Link>
-                </li>
-                <li className="list-inline-item">
-                  <Link to="/">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faGooglePlusG} />
-                    </span>
-                  </Link>
-                </li>
-                <li className="list-inline-item">
-                  <Link to="/">
-                    <span className="icon">
-                      <FontAwesomeIcon icon={faLinkedinIn} />
-                    </span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
+          <div className="col">
+            <ul className="social-share list-inline">
+              <li className="list-inline-item">
+                <Link to="/">
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faFacebookF} />
+                  </span>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faTwitter} />
+                  </span>
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link to="/">
+                  <span className="icon">
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                  </span>
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

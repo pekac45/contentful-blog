@@ -13,10 +13,13 @@
   }
 }
 
-.brand-logo--header img {
-  min-width: 4rem;
-  position: absolute;
-  transform: translate(0, 30%);
+.brand-logo--header {
+  text-align: center;
+
+  img {
+    margin-top: 1rem;
+    max-height: 4rem;
+  }
 }
 
 #main-menu ul {
