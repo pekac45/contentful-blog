@@ -105,6 +105,7 @@
   }
   input[type='reset'] {
     @extend %extend_2;
+    border: 1px solid $color_brown-0;
     &.special {
       @extend %extend_3;
     }
