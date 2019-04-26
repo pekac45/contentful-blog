@@ -12,7 +12,7 @@ const Listen = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-lg-12 col-md-12 widget text-center second-row">
+          <div className="col-lg-12 col-md-12 widget text-center soundcloud_player">
             <iframe
               title="Soundcloud Player"
               height="100"
