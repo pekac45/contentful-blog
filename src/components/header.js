@@ -1,66 +1,58 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faFacebookF,
-  faTwitter,
-  faGooglePlusG,
-  faLinkedinIn
-} from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logoImg from '../images/logo-white.svg';
 
 const Header = () => {
   return (
     <section className="header-wrapper">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <Link to="/" className="brand-logo--header">
+      <nav className="navbar navbar-expand-md">
+        <div className="container">
+          <div className="col-2">
+            <Link to="/" className="brand-logo--header navbar-brand">
               <img src={logoImg} alt="brand logo" />
             </Link>
           </div>
-          <div className="col-7">
-            <nav id="main-menu" className="text-center">
-              <ul>
-                <li>
-                  <Link to="/#listen">Listen</Link>
-                </li>
-                <li>
-                  <Link to="/#blog">Read</Link>
-                </li>
-                <li>
-                  <Link to="/#contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
+          <div className="col-8" id="main-menu">
+            <ul className="navbar-nav justify-content-center text-center">
+              <li className="nav-item">
+                <Link to="/#listen" className="nav-link">
+                  Listen
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/#blog" className="nav-link">
+                  Read
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/#contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
-          <div className="col">
-            <ul className="social-share list-inline">
-              <li className="list-inline-item">
-                <Link to="/">
+          <div className="col-2">
+            <ul className="social-share navbar-nav">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
                   <span className="icon">
                     <FontAwesomeIcon icon={faFacebookF} />
                   </span>
                 </Link>
               </li>
-              <li className="list-inline-item">
-                <Link to="/">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
                   <span className="icon">
                     <FontAwesomeIcon icon={faTwitter} />
-                  </span>
-                </Link>
-              </li>
-              <li className="list-inline-item">
-                <Link to="/">
-                  <span className="icon">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
                   </span>
                 </Link>
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </nav>
     </section>
   );
 };
