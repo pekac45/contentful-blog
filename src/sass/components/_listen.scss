@@ -8,7 +8,7 @@
   padding-bottom: 10rem;
   margin-top: 2rem;
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     padding-bottom: 5rem;
   }
 }
@@ -20,7 +20,7 @@
   width: 80%;
   bottom: 0;
 
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     left: 0%;
     width: 100%;
   }
