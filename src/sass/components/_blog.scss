@@ -18,6 +18,10 @@
     line-height: 4.6rem;
     color: $color_white-0;
     margin-bottom: 0.5rem;
+
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+    }
   }
   .entry-meta-content {
     position: relative;
