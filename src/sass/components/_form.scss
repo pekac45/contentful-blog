@@ -122,6 +122,16 @@
     border: 1px solid $color_purple-0;
 
     @extend %extend_2;
+
+    width: 20rem;
+
+    @include respond(phone) {
+      width: 16rem;
+    }
+    &.animate {
+      animation-name: text-change;
+      animation-duration: 1s;
+    }
     &.special {
       @extend %extend_3;
     }
@@ -181,6 +191,7 @@
     margin-bottom: 6rem;
   }
 }
+
 form.contactForm {
   margin: 0 0 2em;
   .field {
