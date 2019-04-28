@@ -121,6 +121,13 @@
   margin: 5rem;
   padding: 5rem 0;
 
+  font-size: 1.6rem;
+
+  @include respond(tab-port) {
+    margin: 1rem auto;
+    width: 95%;
+  }
+
   .entry-media {
     margin-bottom: 3rem;
     outline: solid 3px $color_white-0;
