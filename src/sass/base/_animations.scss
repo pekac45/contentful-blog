@@ -1,11 +1,11 @@
 @keyframes text-change {
   0% {
-    opacity: 1;
+    color: $color_brown-0;
   }
   50% {
-    opacity: 0;
+    color: transparent;
   }
   100% {
-    opacity: 1;
+    color: $color_brown-0;
   }
 }
