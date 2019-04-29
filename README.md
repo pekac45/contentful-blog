@@ -8,7 +8,7 @@
   Cape - A Gatsby Content starter
 </h1>
 
-<h2>This is heavily modified site made from starter below. See [https://cape.netlify.com/](https://cape.netlify.com/) for original starter.<h2>
+This is heavily modified site made from starter below. See [https://cape.netlify.com/](https://cape.netlify.com/) for original starter.
 
 Kick off your project with this gatsby + contentful demo. You can have a look at this demo url: [https://cape.netlify.com/](https://cape.netlify.com/)
 
