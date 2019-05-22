@@ -14,7 +14,7 @@ class BlogPostTemplate extends Component {
 
     return (
       <Template>
-        <Helmet title={`${post.title}`} />
+        <Helmet title={`${post.title} | Henrik Salomon`} />
         <div className="inner-blog-post">
           <div className="container">
             <div className="row">
